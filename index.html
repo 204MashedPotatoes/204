@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>204</title>
+
+  <meta name="robots" content="noindex">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 98%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrapper h1.glitch {
+      color: white;
+      font-family: sans-serif;
+      font-weight: 800;
+      position: relative;
+      font-size: 100px;
+      padding: 30px;
+      cursor: not-allowed;
+      -webkit-user-select: none;
+      /* Safari */
+      -ms-user-select: none;
+      /* IE 10 and IE 11 */
+      user-select: none;
+      /* Standard syntax */
+    }
+
+    .wrapper h1.glitch::before,
+    .wrapper h1.glitch::after {
+      padding: 30px;
+      color: white;
+      content: "?";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: black;
+      overflow: hidden;
+      top: 0;
+    }
+
+    .wrapper h1.glitch::before {
+      left: 3px;
+      text-shadow: -2px 0 red;
+      animation-name: glitch-animation-1;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: reverse-alternate;
+    }
+
+    .wrapper h1.glitch::after {
+      left: -3px;
+      text-shadow: -2px 0 blue;
+      animation-name: glitch-animation-2;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: reverse-alternate;
+    }
+
+    @keyframes glitch-animation-1 {
+      0% {
+        clip: rect(41px, 350px, 48px, 30px);
+      }
+
+      5% {
+        clip: rect(80px, 350px, 147px, 30px);
+      }
+
+      10% {
+        clip: rect(121px, 350px, 67px, 30px);
+      }
+
+      15% {
+        clip: rect(44px, 350px, 74px, 30px);
+      }
+
+      20% {
+        clip: rect(130px, 350px, 60px, 30px);
+      }
+
+      25% {
+        clip: rect(34px, 350px, 112px, 30px);
+      }
+
+      30% {
+        clip: rect(69px, 350px, 9px, 30px);
+      }
+
+      35% {
+        clip: rect(63px, 350px, 30px, 30px);
+      }
+
+      40% {
+        clip: rect(145px, 350px, 43px, 30px);
+      }
+
+      45% {
+        clip: rect(13px, 350px, 30px, 30px);
+      }
+
+      50% {
+        clip: rect(138px, 350px, 116px, 30px);
+      }
+
+      55% {
+        clip: rect(114px, 350px, 75px, 30px);
+      }
+
+      60% {
+        clip: rect(109px, 350px, 52px, 30px);
+      }
+
+      65% {
+        clip: rect(70px, 350px, 44px, 30px);
+      }
+
+      70% {
+        clip: rect(60px, 350px, 74px, 30px);
+      }
+
+      75% {
+        clip: rect(102px, 350px, 142px, 30px);
+      }
+
+      80% {
+        clip: rect(33px, 350px, 10px, 30px);
+      }
+
+      85% {
+        clip: rect(28px, 350px, 85px, 30px);
+      }
+
+      90% {
+        clip: rect(128px, 350px, 36px, 30px);
+      }
+
+      95% {
+        clip: rect(108px, 350px, 107px, 30px);
+      }
+
+      100% {
+        clip: rect(74px, 350px, 143px, 30px);
+      }
+    }
+
+    @keyframes glitch-animation-2 {
+      0% {
+        clip: rect(28px, 350px, 38px, 30px);
+      }
+
+      5% {
+        clip: rect(81px, 350px, 140px, 30px);
+      }
+
+      10% {
+        clip: rect(115px, 350px, 101px, 30px);
+      }
+
+      15% {
+        clip: rect(62px, 350px, 13px, 30px);
+      }
+
+      20% {
+        clip: rect(132px, 350px, 105px, 30px);
+      }
+
+      25% {
+        clip: rect(112px, 350px, 74px, 30px);
+      }
+
+      30% {
+        clip: rect(106px, 350px, 142px, 30px);
+      }
+
+      35% {
+        clip: rect(64px, 350px, 80px, 30px);
+      }
+
+      40% {
+        clip: rect(76px, 350px, 35px, 30px);
+      }
+
+      45% {
+        clip: rect(125px, 350px, 96px, 30px);
+      }
+
+      50% {
+        clip: rect(54px, 350px, 137px, 30px);
+      }
+
+      55% {
+        clip: rect(45px, 350px, 49px, 30px);
+      }
+
+      60% {
+        clip: rect(148px, 350px, 36px, 30px);
+      }
+
+      65% {
+        clip: rect(41px, 350px, 102px, 30px);
+      }
+
+      70% {
+        clip: rect(62px, 350px, 149px, 30px);
+      }
+
+      75% {
+        clip: rect(25px, 350px, 144px, 30px);
+      }
+
+      80% {
+        clip: rect(133px, 350px, 141px, 30px);
+      }
+
+      85% {
+        clip: rect(88px, 350px, 140px, 30px);
+      }
+
+      90% {
+        clip: rect(43px, 350px, 24px, 30px);
+      }
+
+      95% {
+        clip: rect(95px, 350px, 9px, 30px);
+      }
+
+      100% {
+        clip: rect(5px, 350px, 114px, 30px);
+      }
+    }
+  </style>
+  <style id="INLINE_PEN_STYLESHEET_ID">
+    :root {
+      --bg-color: black;
+      --typewriterSpeed: 2s;
+      --typewriterCharacters: 17;
+    }
+
+    body {
+      background: var(--bg-color);
+    }
+
+    h6 {
+      font-size: clamp(10px);
+      position: relative;
+      font-family: "Source Code Pro", monospace;
+      position: relative;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      color: green;
+      margin-left: 10px;
+    }
+
+    h6::before,
+    h6::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    h6::before {
+      background: var(--bg-color);
+      -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards alternate;
+      animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards alternate;
+    }
+
+    h6::after {
+      width: 0.125em;
+      background: white;
+      -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(var(--typewriterCharacters)) infinite;
+      animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(var(--typewriterCharacters)) infinite;
+    }
+
+
+
+    @-webkit-keyframes typewriter {
+      to {
+        left: 100%;
+
+      }
+    }
+
+    @keyframes typewriter {
+      to {
+        left: 100%;
+
+      }
+
+    }
+
+    @-webkit-keyframes blink {
+      to {
+        background: transparent;
+      }
+    }
+
+    @keyframes blink {
+      to {
+        background: transparent;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <h1 class="glitch">?</h1>
+  </div>
+  <footer>
+    <h6 id="tp">>>Mashed Potato</h6>
+  </footer>
+
+</body>
+<script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  setTimeout(() => {
+    document.getElementById("tp").remove();
+  }, 10000)
+  document.onkeydown = function (e) {
+
+    console.log(e.key);
+    if (e.key === "F12") {
+      console.log('deleted')
+
+      window.open('', '_self', ''); window.close();
+    }
+  };
+</script>
+
+</html>
